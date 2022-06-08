@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  margin-right: 93px;
+
+  font-size: $font-size-logo;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: $wide-font-weight;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+}
+
+.logo__accent-logo {
+  color: $bg-buttons-color-hover;
+  text-decoration: none;
+}
+
+.logo-footer__accent-logo {
+  color: $bg-buttons-color-hover;
+  text-decoration: none;
+}
+
+.logo--light {
+  color: $bg-color;
+  margin-bottom: 20px;
+}
+
+.logo--dark {
+  color: $main-text-color;
+}

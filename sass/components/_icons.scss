@@ -1,0 +1,38 @@
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.custom-checkbox__icon {
+  opacity: 0;
+  transition: $transition-cubic;
+}
+
+.form-policy:checked + .custom-checkbox .custom-checkbox__icon {
+  opacity: 1;
+  fill: white;
+}
+
+.modal-btn__icon {
+  fill: rgba(0, 0, 0, 1);
+  transition: $transition-cubic;
+  .modal-btn:hover & {
+    fill: $bg-buttons-color-hover;
+  }
+}
+
+.client__icon {
+  fill: $social-links-icon-color;
+  transition: $transition-cubic;
+
+  .client:focus &,
+  .client:hover & {
+    fill: $bg-buttons-color-hover;
+  }
+}

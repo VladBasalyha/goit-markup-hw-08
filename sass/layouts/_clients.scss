@@ -1,0 +1,25 @@
+.clients__list.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    border-color: $bg-buttons-color-hover;
+  }
+}

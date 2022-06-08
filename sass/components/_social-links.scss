@@ -1,0 +1,29 @@
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: $transition-cubic;
+}
+
+.social-link--light {
+  background-color: white;
+  fill: $social-links-icon-color;
+}
+
+.social-link--dark {
+  background-color: $bg-color-link-dark;
+  fill: white;
+  &:hover,
+  &:focus {
+    background-color: $bg-buttons-color-hover;
+  }
+}
+
+.social-link--light:focus,
+.social-link--light:hover {
+  background-color: $bg-buttons-color-hover;
+  fill: white;
+}
