@@ -43,4 +43,8 @@
 .offers.section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
