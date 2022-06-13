@@ -1,6 +1,5 @@
-.team.section {
+.team {
   background-color: $team-bg-color;
-  padding-bottom: 94px;
 }
 
 .team__container {
@@ -47,6 +46,11 @@
   @media screen and (max-width: 768px) {
     max-width: 450px;
     margin-bottom: 30px;
+  }
+  &:nth-last-child(-n + 2) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     width: 354px;

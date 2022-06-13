@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .client {
@@ -21,5 +26,14 @@
   &:hover,
   &:focus {
     border-color: $bg-buttons-color-hover;
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+  &:nth-child(2n) {
+    @media screen and (min-width: 480px) {
+      margin-right: 0;
+    }
   }
 }
