@@ -32,6 +32,10 @@
   @media screen and (max-width: 768px) {
     display: block;
   }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
@@ -42,6 +46,10 @@
 
   @media screen and (max-width: 768px) {
     max-width: 450px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 354px;
     margin-bottom: 30px;
   }
 }
@@ -73,6 +81,9 @@
 }
 .team__mate-image {
   @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     width: 100%;
   }
 }
