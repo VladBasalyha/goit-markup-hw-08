@@ -24,6 +24,12 @@
   align-items: baseline;
 }
 
+.footer_container {
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+}
+
 .footer-heading {
   color: $bg-color;
   line-height: 1.17;
