@@ -34,11 +34,19 @@ input {
 
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .mail-input-wrapper {
   display: flex;
   position: relative;
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    flex-direction: column;
+  }
 }
 
 .mail-mark {
@@ -61,10 +69,16 @@ input {
 .mail-input-wrapper__input:focus + .mail-mark {
   transform: translateX(-65px);
   transition: $transition-cubic;
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    transform: translateY(-35px);
+  }
 }
 
 .mail-input-wrapper__input:not(:placeholder-shown) + .mail-mark {
   transform: translateX(-65px);
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    transform: translateY(-35px);
+  }
 }
 
 .mailing-btn {
