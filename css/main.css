@@ -156,7 +156,8 @@ img {
 }
 
 .advantages__icon-container:focus .advantages__icon,
-.advantages__icon-container:hover .advantages__icon {
+.advantages__icon-container:hover .advantages__icon,
+.advantages__icon-container:active .advantages__icon {
   fill: #2196f3;
 }
 
@@ -452,12 +453,14 @@ img {
 @media screen and (max-width: 768px) {
   .team__mate-image {
     width: 100%;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .team__mate-image {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -474,6 +477,16 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .clients__list.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .clients__list.list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -509,16 +522,41 @@ img {
   border-color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .client {
-    width: 210px;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
+  .client {
+    -ms-flex-preferred-size: calc(100% / 2 - 15px);
+        flex-basis: calc(100% / 2 - 15px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .client {
+    -ms-flex-preferred-size: calc(100% / 3 - 20px);
+        flex-basis: calc(100% / 3 - 20px);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .client:nth-child(2n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .client:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .client:nth-child(-n + 3) {
+    margin-bottom: 30px;
   }
 }
 

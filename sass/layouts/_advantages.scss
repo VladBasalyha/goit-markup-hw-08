@@ -12,10 +12,6 @@
   height: 120px;
   border-radius: 4px;
 
-  // @media screen and (max-width: 768px) {
-  //   max-width: 450px;
-  // }
-
   @media screen and (max-width: 767px) {
     max-width: 450px;
   }
@@ -26,7 +22,8 @@
 }
 
 .advantages__icon-container:focus .advantages__icon,
-.advantages__icon-container:hover .advantages__icon {
+.advantages__icon-container:hover .advantages__icon,
+.advantages__icon-container:active .advantages__icon {
   fill: $bg-buttons-color-hover;
 }
 
