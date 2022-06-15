@@ -53,16 +53,6 @@
   transition: $transition-cubic;
 }
 
-.footer__address {
-  margin-bottom: 9px;
-  color: var(--footer-text-color);
-  font-size: $font-medium;
-  text-decoration: none;
-  font-weight: $thin-font-weight;
-  line-height: 1.71;
-  font-style: normal;
-}
-
 .footer__email {
   display: block;
   margin-bottom: 9px;

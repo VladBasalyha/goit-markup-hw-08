@@ -35,8 +35,10 @@ input {
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
 
-  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
     width: 450px;
+
+    margin-right: 0;
     margin-bottom: 20px;
   }
 }
@@ -45,6 +47,9 @@ input {
   display: flex;
   position: relative;
   @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     flex-direction: column;
   }
 }
@@ -113,4 +118,7 @@ input {
 
 .mailing-wrapper {
   margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-right: auto;
+  }
 }
