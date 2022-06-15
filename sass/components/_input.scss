@@ -84,14 +84,15 @@ input {
 .mail-input-wrapper__input:focus + .mail-mark {
   transform: translateX(-65px);
   transition: $transition-cubic;
-  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+
+  @media screen and (max-width: 767.98px) {
     transform: translateY(-35px);
   }
 }
 
 .mail-input-wrapper__input:not(:placeholder-shown) + .mail-mark {
   transform: translateX(-65px);
-  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+  @media screen and (max-width: 767.98px) {
     transform: translateY(-35px);
   }
 }

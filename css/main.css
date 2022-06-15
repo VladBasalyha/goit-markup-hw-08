@@ -1482,7 +1482,7 @@ input {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .mail-input-wrapper__input:focus + .mail-mark {
     -webkit-transform: translateY(-35px);
             transform: translateY(-35px);
@@ -1494,7 +1494,7 @@ input {
           transform: translateX(-65px);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .mail-input-wrapper__input:not(:placeholder-shown) + .mail-mark {
     -webkit-transform: translateY(-35px);
             transform: translateY(-35px);
