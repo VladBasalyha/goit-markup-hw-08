@@ -15,17 +15,30 @@
   font-style: normal;
 }
 
+.footer-social-links {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-social-links__list {
   display: flex;
+  @media screen and (max-width: 767.98px) {
+    justify-content: center;
+  }
+
   @media screen and (min-width: 480px) and (max-width: 767.98px) {
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
 .footer__container {
   display: flex;
   align-items: baseline;
+  @media screen and (max-width: 767.98px) {
+    display: block;
+    text-align: center;
+  }
   @media screen and (min-width: 480px) and (max-width: 767.98px) {
     display: block;
     text-align: center;
@@ -53,6 +66,10 @@
 
 .address-wrapper {
   margin-right: 70px;
+  @media screen and (max-width: 767.98px) {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 480px) and (max-width: 767.98px) {
     margin-right: 0;
     margin-bottom: 60px;
