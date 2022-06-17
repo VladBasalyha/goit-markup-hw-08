@@ -1,5 +1,5 @@
 body {
-  color: var(--main-text-color);
+  color: $main-text-color;
   background-color: var(--bg-color);
   font-family: Roboto, sans-serif;
 }
@@ -47,6 +47,8 @@ img {
 
 .link {
   list-style: none;
+  text-decoration: none;
+  color: currentColor;
 }
 
 .heading {
@@ -59,4 +61,17 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.btn-reset {
+  @media screen and (max-width: 767.98px) {
+    display: inline-flex;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

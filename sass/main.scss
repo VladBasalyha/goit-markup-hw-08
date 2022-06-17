@@ -1,6 +1,6 @@
 // utils
-@import "./utils/vars";
 @import "./utils/container";
+@import "./utils/vars";
 @import "./utils/mixins";
 @import "./utils/reset";
 
@@ -13,8 +13,10 @@
 @import "./layouts/clients";
 @import "./layouts/footer";
 @import "./layouts/portfolio";
+
 // components
 @import "./components/logo";
+@import "./components/menu";
 @import "./components/navigation";
 @import "./components/contacts";
 @import "./components/modal";
