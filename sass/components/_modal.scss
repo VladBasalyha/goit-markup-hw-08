@@ -8,6 +8,8 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   z-index: 1000;
+
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -41,13 +43,14 @@
   transform: translate(-50%, -50%) scale(1);
   transition: 250ms $transition-cubic;
 
-  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
     width: 450px;
   }
 
   @media screen and (max-width: 768px) {
     width: 100%;
     max-width: 450px;
+    height: auto;
   }
 }
 
@@ -130,8 +133,8 @@ textarea[placeholder] {
 
 .checkbox-policy__description {
   font-weight: 400;
-  font-size: $font-medium;
-  line-height: 1.71em;
+  font-size: 12px;
+  line-height: 1.17em;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
