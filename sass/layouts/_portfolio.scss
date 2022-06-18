@@ -27,6 +27,10 @@
 
   transition: $transition-cubic;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:focus,
   &:hover {
     background-color: $bg-buttons-color-hover;
