@@ -31,9 +31,7 @@
       integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <!-- <link
-      rel="stylesheet"
-      href="styles/styles.css" /> -->
+
     <link
       rel="stylesheet"
       href="./css/main.min.css">
@@ -43,7 +41,77 @@
     <header
       class="page-header">
       <div
-        class="navigation container">
+        class="menu-container container"
+        data-menu>
+        <!-- Навігація мобільного меню -->
+        <div
+          class="menu-container__nav">
+          <ul
+            class="mobile-menu-navigation list">
+            <li
+              class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link link"
+                href="./index.html">Cтудия</a>
+            </li>
+            <li
+              class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link link"
+                href="./portfolio.html">Портфолио</a>
+            </li>
+            <li
+              class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link link"
+                href="">Контакты</a>
+            </li>
+          </ul>
+          <div
+            class="menu-container__contacts">
+            <ul
+              class="menu-container-contacts__list list">
+              <li
+                class=" menu-container-contacts__item">
+                <a class="menu-container-contacts__link link"
+                  href="tel:+380961111111">+380961111111</a>
+              </li>
+              <li
+                class=" menu-container-contacts__item">
+                <a class="menu-container-contacts__link link"
+                  href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="menu-container-socials">
+            <ul
+              class="menu-social-links link ">
+              <li
+                class="menu-social-links__item">
+                <a class="menu-social-links link"
+                  href="">Instagram</a>
+              </li>
+              <li
+                class="menu-social-links__item">
+                <a class="menu-social-links link"
+                  href="">Twitter</a>
+              </li>
+              <li
+                class="menu-social-links__item">
+                <a class="menu-social-links link"
+                  href="">Facebook</a>
+              </li>
+              <li
+                class="menu-social-links__item">
+                <a class="menu-social-links__link link"
+                  href="">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div
+        class=" container">
         <div
           class="container__nav-contacts">
           <a class="logo logo--dark"
@@ -52,34 +120,44 @@
               class="logo__accent-logo">
               Web</span>Studio
           </a>
+
+          <!-- Мобільне меню -->
+
+          <!-- Кнопка для моб меню -->
           <button
-            class="menu-button">
+            class="menu-button btn-reset"
+            data-menu-button>
+
+            <!-- Іконки для моб меню -->
             <svg
               width="40"
-              height="40">
+              height="40"
+              aria-label="mobile-menu"
+              aria-expanded="false">
               <use
+                class="icon-menu"
                 href="./images/sprite.svg#icon-menu">
               </use>
               <use
+                class="icon-cross"
                 href="./images/sprite.svg#icon-close">
               </use>
             </svg>
           </button>
-
+          <!-- Навігація -->
           <nav
             class="navigation">
             <ul
               class="navigation__list list">
               <li
                 class="navigation__item ">
-                <a class="navigation__link"
+                <a class="navigation__link navigation__link--current-color"
                   href="index.html">Cтудия</a>
               </li>
               <li
                 class="navigation__item">
-                <a class="navigation__link navigation__link--current-color""
-                  href="
-                  portfolio.html">Портфолио</a>
+                <a class="navigation__link"
+                  href="portfolio.html">Портфолио</a>
               </li>
               <li
                 class="navigation__item">
@@ -174,6 +252,7 @@
                 <a class="card-link"
                   href="">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-1.jpg"
                     alt="Скриншот сайта на ноутбуке"
                     width="370"
@@ -229,6 +308,7 @@
                 <a class="card-link"
                   href="">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-2.jpg"
                     alt="Обложка с изображением баскетболистов"
                     width="370"
@@ -289,6 +369,7 @@
                 <div
                   class="overlay-container">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-3.jpg"
                     alt="Эмблема рыбного ресторана"
                     width="370"
@@ -344,6 +425,7 @@
                 <div
                   class="overlay-container">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-4.jpg"
                     alt="Чёрные наушники"
                     width="370"
@@ -399,6 +481,7 @@
                 <div
                   class="overlay-container">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-5.jpg"
                     alt="Изображение двух коробок"
                     width="370"
@@ -454,6 +537,7 @@
                 <div
                   class="overlay-container">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-6.jpg"
                     alt="Скриншот сайта на экране"
                     width="370"
@@ -510,6 +594,7 @@
                 <div
                   class="overlay-container">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-7.jpg"
                     alt="Фотография журнала"
                     width="370"
@@ -565,6 +650,7 @@
                 <a class="card-link"
                   href="">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-8.jpg"
                     alt="Бирка на белом фоне"
                     width="370"
@@ -619,6 +705,7 @@
                 <div
                   class="overlay-container">
                   <img
+                    class="card__image"
                     src="portfolio-images/pic-9.jpg"
                     alt="Человек печатает на ноутбуке"
                     width="370"
@@ -823,6 +910,8 @@
         </div>
 
     </footer>
+    <script
+      src="./js/menu.js"></script>
   </body>
 
 </html>

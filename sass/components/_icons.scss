@@ -3,6 +3,11 @@
   fill: currentColor;
 }
 
+.contacts-icon--mail {
+  width: 14px;
+  height: 10px;
+}
+
 .form-field__icon {
   position: absolute;
   top: 50%;
@@ -35,4 +40,8 @@
   .client:hover & {
     fill: $bg-buttons-color-hover;
   }
+}
+
+.contacts__email {
+  margin-bottom: 10px;
 }
