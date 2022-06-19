@@ -1117,6 +1117,14 @@ img {
   color: #212121;
 }
 
+.mobile-menu-navigation__link:hover, .mobile-menu-navigation__link:focus {
+  color: #2196f3;
+}
+
+.mobile-menu-navigation--current {
+  color: #2196f3;
+}
+
 .menu-container-contacts__item {
   margin-bottom: 32px;
   font-weight: 500;
@@ -1141,10 +1149,6 @@ img {
 
 .mobile-menu-navigation__item:last-child {
   margin-bottom: 0;
-}
-
-.menu-container__contacts {
-  margin-bottom: 64px;
 }
 
 .menu-social-links {
@@ -1753,6 +1757,12 @@ input {
     width: 450px;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-input-wrapper__input {
+    width: 351px;
   }
 }
 

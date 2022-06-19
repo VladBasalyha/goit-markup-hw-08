@@ -47,6 +47,9 @@ input {
     margin-right: 0;
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 351px;
+  }
 }
 
 .mail-input-wrapper {
