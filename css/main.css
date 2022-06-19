@@ -747,10 +747,13 @@ img {
   }
 }
 
+.buttons__item {
+  margin-right: 10px;
+}
+
 .buttons__btn {
   display: inline-block;
   padding: 6px 22px 6px 22px;
-  margin-right: 8px;
   border-radius: 4px;
   text-align: center;
   border-color: transparent;
@@ -763,10 +766,6 @@ img {
   line-height: 1.7;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttons__btn:last-child {
-  margin-right: 0;
 }
 
 .buttons__btn:focus, .buttons__btn:hover {
@@ -951,6 +950,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .overlay-container__paragraph {
     padding: 77px 24px;
+    overflow: scroll;
   }
 }
 
@@ -1275,6 +1275,12 @@ img {
   margin-right: 50px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__email {
+    margin-bottom: 10px;
+  }
+}
+
 .contacts__email,
 .contacts__phone-number {
   display: -webkit-box;
@@ -1319,6 +1325,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .container__nav-contacts {
+    padding: 15px 0;
+  }
 }
 
 .contacts__icon {
@@ -1408,6 +1420,13 @@ img {
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .modal-wrapper {
+    -webkit-transform: translate(-50%, -45%);
+            transform: translate(-50%, -45%);
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
@@ -1531,15 +1550,14 @@ textarea[placeholder] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  outline: 2px solid #212121;
-  outline-offset: -2px;
+  border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
   cursor: pointer;
 }
 
 .form-policy:focus + .custom-checkbox {
-  outline: 2px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .custom-checkbox__icon {
@@ -1555,8 +1573,7 @@ textarea[placeholder] {
 
 .form-policy:checked + .custom-checkbox {
   background-color: #2196f3;
-  outline: 2px solid #2196f3;
-  outline-offset: -2px;
+  border: 2px solid #2196f3;
 }
 
 .btn-primary {
@@ -1948,9 +1965,5 @@ input {
 .client:focus .client__icon,
 .client:hover .client__icon {
   fill: #2196f3;
-}
-
-.contacts__email {
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

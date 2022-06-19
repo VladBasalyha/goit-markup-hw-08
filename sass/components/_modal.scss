@@ -42,6 +42,9 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: 250ms $transition-cubic;
+  @media screen and (max-width: 1199.98px) {
+    transform: translate(-50%, -45%);
+  }
 
   @media screen and (min-width: 480px) and (max-width: 1199.98px) {
     width: 450px;
@@ -151,8 +154,8 @@ textarea[placeholder] {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 2px solid #212121;
-  outline-offset: -2px;
+  border: 2px solid #212121;
+
   border-radius: 2px;
 
   margin-right: 7px;
@@ -160,7 +163,7 @@ textarea[placeholder] {
 }
 
 .form-policy:focus + .custom-checkbox {
-  outline: 2px solid $bg-buttons-color-hover;
+  border: 2px solid $bg-buttons-color-hover;
 }
 
 .custom-checkbox__icon {
@@ -175,6 +178,5 @@ textarea[placeholder] {
 
 .form-policy:checked + .custom-checkbox {
   background-color: #2196f3;
-  outline: 2px solid $bg-buttons-color-hover;
-  outline-offset: -2px;
+  border: 2px solid $bg-buttons-color-hover;
 }
