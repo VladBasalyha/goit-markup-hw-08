@@ -12,7 +12,7 @@
 
   @media screen and (max-width: 767.98px) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url(/images/hero-450.jpg);
+      url("/images/hero-450.jpg");
 
     padding-top: 118px;
     padding-bottom: 118px;
@@ -24,7 +24,7 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url(/images/hero-768.jpg);
+      url("/images/hero-768.jpg");
     padding-top: 118px;
     padding-bottom: 118px;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 
   @media screen and (min-width: 1200px) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url(/images/hero-1200.jpg);
+      url("/images/hero-1200.jpg");
 
     padding-top: 200px;
     padding-bottom: 200px;
