@@ -139,8 +139,13 @@ textarea[placeholder] {
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.03em;
+
   color: #757575;
+  text-align: left;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .checkbox-policy__link {
