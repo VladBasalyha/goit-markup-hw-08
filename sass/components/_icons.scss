@@ -4,8 +4,10 @@
 }
 
 .contacts-icon--mail {
-  width: 14px;
-  height: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .form-field__icon {

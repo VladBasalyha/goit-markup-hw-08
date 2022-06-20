@@ -18,7 +18,10 @@
 .menu-button.is-open .icon-menu {
   display: none;
 }
-
+.menu-button:hover svg,
+.menu-button:focus svg {
+  fill: $bg-buttons-color-hover;
+}
 .menu-container {
   @media screen and (max-width: 767.98px) {
     // display: none;
@@ -73,17 +76,30 @@
 .menu-container-contacts__item {
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
 
   color: $secondary-text-color;
-  &:first-child {
-    margin-bottom: 32px;
-    font-size: 36px;
+  @media screen and (max-width: 767.98px) {
+    &:first-child {
+      margin-bottom: 32px;
+      font-size: 7.5vw;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    &:first-child {
+      font-size: 36px;
+    }
   }
   &:last-child {
-    margin-bottom: 0;
+    @media screen and (max-width: 767.98px) {
+      font-size: 5vw;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767.98px) {
+      font-size: 24px;
+    }
   }
 }
 

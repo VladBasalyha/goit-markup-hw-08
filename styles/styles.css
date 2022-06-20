@@ -545,15 +545,7 @@ textarea[placeholder] {
 
 }
 
-. {
-  margin-bottom: 9px;
-  color: var(--footer-text-color);
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.71;
-  font-style: normal;
-}
+
 
 .footer__email {
   display: block;

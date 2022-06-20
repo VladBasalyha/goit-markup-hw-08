@@ -1,20 +1,45 @@
 .hero {
   display: flex;
   text-align: center;
-  background: linear-gradient($hero-img-overlay, $hero-img-overlay),
-    url(/images/hero-img.jpg);
 
-  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  background-size: cover;
 
-  @media screen and (max-width: 1199.98px) {
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 767.98px) {
+    background: linear-gradient($hero-overlay, $hero-overlay),
+      url(/images/hero-450.jpg);
+
     padding-top: 118px;
     padding-bottom: 118px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    background: linear-gradient($hero-overlay, $hero-overlay),
+      url(/images/hero-768.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient($hero-overlay, $hero-overlay),
+      url(/images/hero-1200.jpg);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
   }
 }
@@ -27,7 +52,7 @@
   line-height: 1.36;
   text-transform: uppercase;
   font-weight: $fat-font-weight;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   letter-spacing: 0.06em;
 
   @media screen and (max-width: 1199.98px) {

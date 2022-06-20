@@ -42,18 +42,18 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: 250ms $transition-cubic;
+
   @media screen and (max-width: 1199.98px) {
     transform: translate(-50%, -45%);
   }
 
-  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
-    width: 450px;
-  }
-
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 95vw;
     max-width: 450px;
     height: auto;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
+    width: 450px;
   }
 }
 
