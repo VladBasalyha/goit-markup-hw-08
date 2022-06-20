@@ -12,7 +12,7 @@
 
   @media screen and (max-width: 767.98px) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url("../images/hero-450.png");
+      url("./images/hero-450.png");
 
     padding-top: 118px;
     padding-bottom: 118px;
@@ -26,12 +26,12 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url("../images/hero-450@2x.png");
+      url("./images/hero-450@2x.png");
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url("../images/hero-768.png");
+      url("./images/hero-768.png");
     padding-top: 118px;
     padding-bottom: 118px;
     background-repeat: no-repeat;
@@ -42,13 +42,13 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background: linear-gradient($hero-overlay, $hero-overlay),
-        url("../images/hero-768@2x.png");
+        url("/images/hero-768@2x.png");
     }
   }
 
   @media screen and (min-width: 1200px) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url("../images/hero-1200.png");
+      url("/images/hero-1200.png");
 
     padding-top: 200px;
     padding-bottom: 200px;
@@ -56,11 +56,12 @@
     background-size: cover;
     background-position: center;
   }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background: linear-gradient($hero-overlay, $hero-overlay),
-      url("../images/hero-1200@2x.png");
+      url("/images/hero-1200@2x.png");
   }
 }
 
