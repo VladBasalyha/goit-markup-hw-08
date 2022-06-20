@@ -27,6 +27,12 @@
     (min-resolution: 2dppx) {
     background: linear-gradient($hero-overlay, $hero-overlay),
       url("/images/hero-img-450@2x.png");
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -43,6 +49,11 @@
       (min-resolution: 2dppx) {
       background: linear-gradient($hero-overlay, $hero-overlay),
         url("/images/hero-768@2x.png");
+      padding-top: 118px;
+      padding-bottom: 118px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -61,7 +72,8 @@
     (min-resolution: 2dppx) {
     background: linear-gradient($hero-overlay, $hero-overlay),
       url("/images/hero-1200@2x.png");
-
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
