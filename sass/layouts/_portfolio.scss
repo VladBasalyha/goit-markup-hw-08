@@ -72,7 +72,7 @@
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 2 * 60px) / 3);
 
   transition: $transition-cubic;
 

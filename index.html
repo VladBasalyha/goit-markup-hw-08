@@ -533,13 +533,21 @@
           </h2>
           <ul
             class="offers__list">
+
             <li
               class="offers__item">
-              <img
-                src="images/first-image.jpg"
-                width="370"
-                alt="Человек печатает на клавиатуре"
-                class="offers__image" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="images\first-image.jpg 1x,
+                  images\first-image@2x.jpg 2x"
+                  type="image/jpg">
+                <img
+                  src="images/first-image.jpg"
+                  width="370"
+                  alt="Человек печатает на клавиатуре"
+                  class="offers__image" />
+              </picture>
               <p
                 class="offers__paragraph">
                 Десктопные
@@ -549,11 +557,17 @@
 
             <li
               class="offers__item">
-              <img
-                src="images/second-image.jpg"
-                width="370"
-                alt="Человек смотрит в телефон"
-                class="offers__image" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="images\second-image.jpg 1x, images\second-image@2x.jpg 2x"
+                  type="image/jpg">
+                <img
+                  src="images/second-image.jpg"
+                  width="370"
+                  alt="Человек смотрит в телефон"
+                  class="offers__image" />
+              </picture>
               <p
                 class="offers__paragraph">
                 Мобильные
@@ -563,11 +577,18 @@
 
             <li
               class="offers__item">
-              <img
-                src="images/third-image.jpg"
-                width="370"
-                alt="Человек рисует на планшете"
-                class="offers__image" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="images\third-image.jpg 1x, images\third-image@2x.jpg 2x"
+                  type="image/jpg">
+                <img
+                  src="images/third-image.jpg"
+                  width="370"
+                  height="260"
+                  alt="Человек рисует на планшете"
+                  class="offers__image" />
+              </picture>
               <p
                 class="offers__paragraph">
                 Дизайнерские
@@ -590,13 +611,36 @@
           <ul
             class="team__list">
 
+
             <li
               class="team__item">
-              <img
-                class="team__mate-image"
-                src="images/igor-img.jpg"
-                alt="Мужчина в очках"
-                width="270" />
+              <picture>
+                <source
+                  srcset="./images/Igor-450-img.jpg 1x, 
+                  ./images/Igor-450-img@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/Igor-768-img.jpg 1x, 
+                  ./images/Igor-768-img@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/Igor-1200-img.jpg 1x, 
+                  ./images/Igor-1200-img@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg">
+
+                <img
+                  src="./images/Igor-450-img.jpg"
+                  class="team__mate-image"
+                  alt="Мужчина в очках"
+                  width="270"
+                  height="260" />
+              </picture>
+
               <div
                 class="team__container">
                 <h3
@@ -689,11 +733,32 @@
 
             <li
               class="team__item">
-              <img
-                class="team__mate-image"
-                src="images/olga-img.jpg"
-                width="270"
-                alt="Девушка в очках и костюме" />
+              <picture>
+                <source
+                  srcset="./images/Olga-450-img.jpg 1x, 
+                  ./images/Olga-450-img@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/Olga-768-img.jpg 1x, 
+                  ./images/Olga-768-img@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/Olga-1200-img.jpg 1x, 
+                  ./images/Olga-1200-img@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg">
+
+                <img
+                  class="team__mate-image"
+                  src="images/olga-img.jpg"
+                  width="270"
+                  alt="Девушка в очках и костюме" />
+              </picture>
+
               <div
                 class="team__container">
                 <h3
@@ -785,11 +850,31 @@
 
             <li
               class="team__item">
-              <img
-                class="team__mate-image"
-                src="images/nikolay-img.jpg"
-                alt="Улыбающийся мужчина"
-                width="270" />
+              <picture>
+                <source
+                  srcset="./images/nikolay-450-img.jpg 1x, 
+                              ./images/nikolay-450-img@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/nikolay-768-img.jpg 1x, 
+                              ./images/nikolay-768-img@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/nikolay-1200-img.jpg 1x, 
+                              images\nikolay-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg">
+                <img
+                  class="team__mate-image"
+                  src="images/nikolay-img.jpg"
+                  alt="Улыбающийся мужчина"
+                  width="270"
+                  height="260" />
+              </picture>
 
               <div
                 class="team__container">
@@ -882,11 +967,33 @@
 
             <li
               class="team__item">
-              <img
-                class="team__mate-image"
-                src="images/mikhail-img.jpg"
-                alt="Мужчина в очках"
-                width="270" />
+              <picture>
+                <source
+                  srcset="./images/mikhail-450-img.jpg 1x, 
+                                          ./images/mikhail-450-img@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/mikhail-768-img.jpg 1x, 
+                                          ./images/mikhail-768-img@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpg">
+
+                <source
+                  srcset="./images/mikhail-1200-img.jpg 1x, 
+                                          images\mikhail-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg">
+
+                <img
+                  class="team__mate-image"
+                  src="images/mikhail-img.jpg"
+                  alt="Мужчина в очках"
+                  width="270"
+                  height="260" />
+              </picture>
+
               <div
                 class="team__container">
                 <h3
