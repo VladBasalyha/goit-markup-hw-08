@@ -2,7 +2,7 @@
   display: flex;
   text-align: center;
   background: linear-gradient($hero-img-overlay, $hero-img-overlay),
-    url(../images/Img.jpg);
+    url(/images/hero-img.jpg);
 
   background-repeat: no-repeat;
   margin-left: auto;
@@ -11,6 +11,12 @@
   padding-bottom: 200px;
   max-width: 1600px;
   background-size: cover;
+
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-position: center;
+  }
 }
 
 .hero__heading {

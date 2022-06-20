@@ -120,8 +120,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img.jpg);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-img.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img.jpg);
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
@@ -129,6 +129,14 @@ img {
   padding-bottom: 200px;
   max-width: 1600px;
   background-size: cover;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-position: center;
+  }
 }
 
 .hero__heading {
