@@ -887,6 +887,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -894,6 +895,12 @@ img {
     margin-right: 0;
     margin-left: 0;
     display: block;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .cards.list {
     margin-bottom: 0;
   }
 }
@@ -932,25 +939,18 @@ img {
   }
   .card:nth-last-child(-n + 3) {
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 767.98px) {
-  .card:nth-last-child(-n + 3) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .card:last-child {
     margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .card {
-    margin-right: 0;
-  }
+  margin-right: 0;
 }
 
 .card__image {
