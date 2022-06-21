@@ -1159,25 +1159,20 @@ img {
   }
 }
 
+.menu-container__nav {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .menu-container__nav {
     display: none;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .menu-container__nav {
-    height: 796px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1194,14 +1189,12 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .mobile-menu-navigation__link {
-    font-size: 8.33vw;
+    font-size: 40px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
-  .mobile-menu-navigation__link {
-    font-size: 40px;
-  }
+.mobile-menu-navigation {
+  margin-bottom: auto;
 }
 
 .mobile-menu-navigation--current {
@@ -1219,7 +1212,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .menu-container-contacts__item:first-child {
     margin-bottom: 32px;
-    font-size: 7.5vw;
+    font-size: 34px;
   }
 }
 
@@ -1231,12 +1224,11 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .menu-container-contacts__item:last-child {
-    font-size: 5vw;
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .menu-container-contacts__item:last-child {
     font-size: 24px;
   }
@@ -1248,6 +1240,10 @@ img {
 
 .mobile-menu-navigation__item:last-child {
   margin-bottom: 0;
+}
+
+.menu-container__contacts {
+  margin-bottom: auto;
 }
 
 .menu-social-links {
@@ -1266,16 +1262,11 @@ img {
   line-height: 22px;
   /* identical to box height, or 122% */
   letter-spacing: 0.02em;
+  font-size: 3.75vw;
   color: #2196f3;
   padding-right: 9px;
   margin-left: 9px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-@media screen and (max-width: 767.98px) {
-  .menu-social-links__item {
-    font-size: 3.75vw;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.98px) {
