@@ -34,6 +34,9 @@
 
   &:last-child {
     margin-right: 0;
+    @media screen and (max-width: 1199.98px) {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 768px) and(max-width: 1200px ) {
@@ -105,5 +108,5 @@
   color: $secondary-text-color;
   font-size: $font-medium;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
 }
